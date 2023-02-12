@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QiitaSearchAPIViewController" customModule="MVVMSample11" customModuleProvider="target">
+            <connections>
+                <outlet property="articleTableView" destination="Ag1-nS-tIF" id="Pyj-Pe-rdq"/>
+                <outlet property="keywordSearchBar" destination="f4t-9k-pPf" id="aHo-Y4-bmA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="f4t-9k-pPf">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gWm-87-IP2"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="7HW-6x-LC7"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ag1-nS-tIF">
+                    <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ag1-nS-tIF" secondAttribute="bottom" id="ACo-PL-OhV"/>
+                <constraint firstItem="Ag1-nS-tIF" firstAttribute="top" secondItem="f4t-9k-pPf" secondAttribute="bottom" id="Hm4-wz-p0h"/>
+                <constraint firstItem="Ag1-nS-tIF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="K2F-1Z-6Qn"/>
+                <constraint firstItem="Ag1-nS-tIF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aiC-pa-d32"/>
+                <constraint firstItem="f4t-9k-pPf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="eSv-Rm-iWX"/>
+                <constraint firstItem="f4t-9k-pPf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iwH-0D-gQf"/>
+                <constraint firstItem="f4t-9k-pPf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ye6-6w-aBO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
