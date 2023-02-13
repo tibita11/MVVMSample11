@@ -19,7 +19,6 @@ class QiitaAPIclient: APIClient {
     let url = "https://qiita.com/api/v2/items"
     
     func getRequest(_ parameters: [String : String]) -> DataRequest {
-        // encodeしなくても行けた。encodingプロパティは何のためか？調べる
         return AF.request(url, parameters: parameters)
     }
     

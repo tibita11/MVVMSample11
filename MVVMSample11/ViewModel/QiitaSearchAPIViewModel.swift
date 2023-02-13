@@ -42,9 +42,10 @@ class QiitaSearchAPIViewModel: QiitaSearchAPIType {
                 switch event {
                 case .next:
                     return .just(event.element!)
-                case .error:
+                case let .error(error as QiitaSearchAPIError):
+                    print(error)
                     return .empty()
-                case .completed:
+                case .error, .completed:
                     return .empty()
                 }
             }
