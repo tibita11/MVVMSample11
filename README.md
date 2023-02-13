@@ -13,3 +13,5 @@ Codableを使用する
 materializeを使用したエラー処理を行う
 ## 使用した技術
 MVVM, RxSwift, RxCocoa, Alamofire, Codable, QiitaAPI
+## アプリの使い方
+![MVVMSample11](https://user-images.githubusercontent.com/108079580/218485101-0b65bad6-dd99-46a4-928a-63978482700e.gif)
